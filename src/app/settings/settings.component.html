@@ -1,0 +1,6 @@
+<h2>Settings</h2>
+<div *ngFor="let setting of settings">
+  <p-card [style]="{ 'margin-bottom': '1em' }">
+    <a href="#" class="{{ setting.icon }}"> {{ setting.name }} </a>
+  </p-card>
+</div>

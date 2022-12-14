@@ -1,0 +1,25 @@
+<h2>DASHBOARD</h2>
+
+<p-card [style]="{ 'margin-bottom': '1.4rem' }">
+  <h1>81% Remaining</h1>
+  <div>Nearest Charging Station 3.1km</div>
+  <button
+    pButton
+    type="button"
+    styleClass="p-button-success"
+    class="p-button-sm p-button-rounded"
+    [style]="{ 'margin-top': '1rem' }"
+  >
+    Get Direction
+  </button>
+</p-card>
+
+<p-card>
+  <p-chart
+    type="pie"
+    [data]="data"
+    [options]="chartOptions"
+    [style]="{ width: '40px' }"
+  ></p-chart>
+  <ng-template pTemplate="footer"> Estimation : 82 km Remaining </ng-template>
+</p-card>

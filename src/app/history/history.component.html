@@ -1,0 +1,18 @@
+<h2>History</h2>
+<p-card [style]="{ 'margin-bottom': '1.4em' }">
+  <div class="card">
+    <p-chart
+      type="line"
+      [data]="multiAxisData"
+      [options]="multiAxisOptions"
+    ></p-chart>
+  </div>
+</p-card>
+
+<p-card>
+  <p-timeline [value]="events2" layout="horizontal" align="top">
+    <ng-template pTemplate="content" let-event>
+      &#123;&#123;event&#125;&#125;
+    </ng-template>
+  </p-timeline>
+</p-card>

@@ -1,0 +1,17 @@
+p-toolbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 4rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  li {
+    display: inline;
+  }
+}
